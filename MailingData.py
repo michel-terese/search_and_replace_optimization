@@ -17,9 +17,9 @@ class MailingData:
         # Vérifie que la feuille contient au moins les colonnes 'DESTINATAIRES' et 'DESTINATAIRES_COPIE'
         self.checkHeaderValidity(self.header)
         # Stocke les noms des autres colonnes dans self.fieldsName
-        self.fieldsName = self.header[2:]
+        self.fieldNames = self.header[2:]
 
-    def fieldsValueAsDict(self) -> Generator[dict[str, str], None, None]:
+    def nextFieldValuesAsDict(self) -> Generator[dict[str, str], None, None]:
         """
         Retourne un itérateur sur les lignes de la 1ère feuille du fichier xlsx,
         en excluant la première ligne (en-tête) et les 2 premières colonnes.
@@ -31,7 +31,7 @@ class MailingData:
             rowDict = {self.header[i]: str(row[i]) for i in range(2, len(row))}
             yield rowDict
 
-    def fieldsValueAsList(self) -> Generator[List[str], None, None]:
+    def nextFieldsValueAsList(self) -> Generator[List[str], None, None]:
         """
         Retourne un itérateur sur les lignes de la 1ère feuille du fichier xlsx,
         en excluant la première ligne (en-tête) et les 2 premières colonnes.
@@ -75,7 +75,7 @@ def _main() -> None:
         # for row in mailingData.fieldsValueAsDict():
         #     print(row)
 
-        for row in mailingData.fieldsValueAsList():
+        for row in mailingData.nextFieldsValueAsList():
             print(row)
 
     except ValueError as e:

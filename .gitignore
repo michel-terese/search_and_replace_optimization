@@ -1,3 +1,5 @@
 __pycache__
-*.html
-*.xlsx
+.idea
+template_1381.xlsx
+template_1381.html
+output_*.html
