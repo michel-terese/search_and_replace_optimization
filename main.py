@@ -48,11 +48,10 @@ def test_fillOut__withSegmentationAndList(htmlOutputFile: Path, template: Templa
 
 def main() -> None:
     """
-    Fonction principale pour exécuter le script de génération de mailing.
-    Crée un objet Mailer, génère des contenus formatés et les ajoute au fichier HTML.
+    Test de la génération de mailing selon différentes méthodes de remplissage du modèle de mail.
     """
-    templateFile = Path('simple_template.html')
     dataFile = Path('simple_data.xlsx')
+    templateFile = Path('simple_template.html')
     # templateFile = Path('template_1381.html')
     # dataFile = Path('template_1381.xlsx')
 
