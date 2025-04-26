@@ -19,7 +19,7 @@ class MailingData:
         # Stocke les noms des autres colonnes dans self.fieldsName
         self.fieldsName = self.header[2:]
 
-    def fieldsValue(self) -> Generator[dict[str, str], None, None]:
+    def fieldsValueAsDict(self) -> Generator[dict[str, str], None, None]:
         """
         Retourne un itérateur sur les lignes de la 1ère feuille du fichier xlsx,
         en excluant la première ligne (en-tête) et les 2 premières colonnes.
@@ -30,6 +30,18 @@ class MailingData:
             # Exclut les 2 premières colonnes
             rowDict = {self.header[i]: str(row[i]) for i in range(2, len(row))}
             yield rowDict
+
+    def fieldsValueAsList(self) -> Generator[List[str], None, None]:
+        """
+        Retourne un itérateur sur les lignes de la 1ère feuille du fichier xlsx,
+        en excluant la première ligne (en-tête) et les 2 premières colonnes.
+        Chaque ligne est un dictionnaire avec les noms de colonnes comme clés
+        et les valeurs sont converties en str si besoin.
+        """
+        for row in self._sheet[1:]:
+            # Exclut les 2 premières colonnes
+            rowList = [str(row[i]) for i in range(2, len(row))]
+            yield rowList
 
     @staticmethod
     def checkHeaderValidity(header: List[str]) -> None:
@@ -60,8 +72,12 @@ def _main() -> None:
         mailingData: MailingData = MailingData(Path(xlsxFile))
 
         print("Noms des colonnes :", mailingData.header)
-        for row in mailingData.fieldsValue():
+        # for row in mailingData.fieldsValueAsDict():
+        #     print(row)
+
+        for row in mailingData.fieldsValueAsList():
             print(row)
+
     except ValueError as e:
         print(f"Erreur : {e}")
     except FileNotFoundError as e:
