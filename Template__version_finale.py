@@ -5,7 +5,7 @@ import re
 from typing import List
 
 
-class Template:
+class TemplateManager:
     def __init__(self, htmlFile: Path, providedFieldNames: List[str]) -> None:
         """
         Initialise la classe Template avec le contenu d'un fichier HTML et les noms de champs fournis.
@@ -88,11 +88,11 @@ def _main():
     # Exemple de liste de valeurs pour les champs
     fieldValues = ['VALEUR CHAMP1', 'VALEUR CHAMP2', 'VALEUR CHAMP3']
 
-    template = Template(htmlFile=Path('simple_template.html'),
-                        providedFieldNames=fieldNames)
+    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+                                      providedFieldNames=fieldNames)
 
     # Remplace les champs dans le contenu HTML par les valeurs fournies
-    filledTemplate = template.fillOut(fieldValues)
+    filledTemplate = templateManager.fillOut(fieldValues)
     print(filledTemplate)
 
 

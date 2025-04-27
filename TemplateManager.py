@@ -3,7 +3,7 @@ import re
 from typing import List
 
 
-class Template:
+class TemplateManager:
     def __init__(self, htmlFile: Path, providedFieldNames: List[str]) -> None:
         """
         Initialise la classe Template avec le contenu d'un fichier HTML et les noms de champs fournis.
@@ -128,8 +128,8 @@ def _test_fillOut__withRegex(executionCount: int) -> None:
         'CHAMP3': 'VALEUR CHAMP3'
     }
 
-    template = Template(htmlFile=Path('simple_template.html'),
-                        providedFieldNames=list(fieldValues.keys()))
+    template = TemplateManager(htmlFile=Path('simple_template.html'),
+                               providedFieldNames=list(fieldValues.keys()))
 
     # Remplace les champs dans le contenu HTML par les valeurs fournies
     filledTemplate = template.fillOut__withRegex(fieldValues)
@@ -141,7 +141,7 @@ def _test_fillOut__withRegex(executionCount: int) -> None:
         number=executionCount
     )
     executionCountStr = f"{executionCount:,}".replace(',', ' ')
-    print(f"fillOut__withRegex: {executionTime:.6f} secondes pour {executionCountStr} exécutions")
+    print(f"fillOut__withRegex: {executionTime:.2f} secondes pour {executionCountStr} exécutions")
     print('-' * 80)
 
 
@@ -156,20 +156,20 @@ def _test_fillOut__withReplace(executionCount: int) -> None:
         'CHAMP3': 'VALEUR CHAMP3'
     }
 
-    template = Template(htmlFile=Path('simple_template.html'),
-                        providedFieldNames=list(fieldValues.keys()))
+    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+                                      providedFieldNames=list(fieldValues.keys()))
 
     # Remplace les champs dans le contenu HTML par les valeurs fournies
-    filledTemplate = template.fillOut__withReplace(fieldValues)
+    filledTemplate = templateManager.fillOut__withReplace(fieldValues)
     print(filledTemplate)
 
     # Profilage de l'exécution
     executionTime = timeit.timeit(
-        lambda: template.fillOut__withReplace(fieldValues),
+        lambda: templateManager.fillOut__withReplace(fieldValues),
         number=executionCount
     )
     executionCountStr = f"{executionCount:,}".replace(',', ' ')
-    print(f"fillOut__withReplace: {executionTime:.6f} secondes pour {executionCountStr} exécutions")
+    print(f"fillOut__withReplace: {executionTime:.2f} secondes pour {executionCountStr} exécutions")
     print('-' * 80)
 
 
@@ -184,20 +184,20 @@ def _test_fillOut__withSegmentationAndDict(executionCount: int) -> None:
         'CHAMP3': 'VALEUR CHAMP3'
     }
 
-    template = Template(htmlFile=Path('simple_template.html'),
-                        providedFieldNames=list(fieldValues.keys()))
+    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+                                      providedFieldNames=list(fieldValues.keys()))
     
     # Remplace les champs dans le contenu HTML par les valeurs fournies
-    filledTemplate = template.fillOut__withSegmentationAndDict(fieldValues)
+    filledTemplate = templateManager.fillOut__withSegmentationAndDict(fieldValues)
     print(filledTemplate)
 
     # Profilage de l'exécution
     executionTime = timeit.timeit(
-        lambda: template.fillOut__withSegmentationAndDict(fieldValues),
+        lambda: templateManager.fillOut__withSegmentationAndDict(fieldValues),
         number=executionCount
     )
     executionCountStr = f"{executionCount:,}".replace(',', ' ')
-    print(f"fillOut__withSegmentationAndDict: {executionTime:.6f} secondes pour {executionCountStr} exécutions")
+    print(f"fillOut__withSegmentationAndDict: {executionTime:.2f} secondes pour {executionCountStr} exécutions")
     print('-' * 80)
 
 
@@ -210,20 +210,20 @@ def _test_fillOut__withSegmentationAndList(executionCount: int) -> None:
     # Exemple de liste de valeurs pour les champs
     fieldValues = ['VALEUR CHAMP1', 'VALEUR CHAMP2', 'VALEUR CHAMP3']
 
-    template = Template(htmlFile=Path('simple_template.html'),
-                        providedFieldNames=fieldNames)
+    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+                                      providedFieldNames=fieldNames)
     
     # Remplace les champs dans le contenu HTML par les valeurs fournies
-    filledTemplate = template.fillOut__withSegmentationAndList(fieldValues)
+    filledTemplate = templateManager.fillOut__withSegmentationAndList(fieldValues)
     print(filledTemplate)
 
     # Profilage de l'exécution
     executionTime = timeit.timeit(
-        lambda: template.fillOut__withSegmentationAndList(fieldValues),
+        lambda: templateManager.fillOut__withSegmentationAndList(fieldValues),
         number=executionCount
     )
     executionCountStr = f"{executionCount:,}".replace(',', ' ')
-    print(f"fillOut__withSegmentationAndList: {executionTime:.6f} secondes pour {executionCountStr} exécutions")
+    print(f"fillOut__withSegmentationAndList: {executionTime:.2f} secondes pour {executionCountStr} exécutions")
     print('-' * 80)
 
 

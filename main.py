@@ -2,12 +2,12 @@
 
 from pathlib import Path
 from Mailer import Mailer
-from Template import Template
+from TemplateManager import TemplateManager
 from MailingData import MailingData
 import time
 
 
-def test_fillOut__withReplace(htmlOutputFile: Path, template: Template, data: MailingData) -> None:
+def test_fillOut__withReplace(htmlOutputFile: Path, template: TemplateManager, data: MailingData) -> None:
     start = time.perf_counter()
     mailer = Mailer(htmlOutputFile)
 
@@ -20,7 +20,7 @@ def test_fillOut__withReplace(htmlOutputFile: Path, template: Template, data: Ma
     print(f"Durée d'exécution de test_fillOut__withReplace : {end - start:.4f} secondes")
 
 
-def test_fillOut__withSegmentationAndDict(htmlOutputFile: Path, template: Template, data: MailingData) -> None:
+def test_fillOut__withSegmentationAndDict(htmlOutputFile: Path, template: TemplateManager, data: MailingData) -> None:
     start = time.perf_counter()
     mailer = Mailer(htmlOutputFile)
 
@@ -33,7 +33,7 @@ def test_fillOut__withSegmentationAndDict(htmlOutputFile: Path, template: Templa
     print(f"Durée d'exécution de test_fillOut__withSegmentationAndDict : {end - start:.4f} secondes")
 
 
-def test_fillOut__withSegmentationAndList(htmlOutputFile: Path, template: Template, data: MailingData) -> None:
+def test_fillOut__withSegmentationAndList(htmlOutputFile: Path, template: TemplateManager, data: MailingData) -> None:
     start = time.perf_counter()
     mailer = Mailer(htmlOutputFile)
 
@@ -56,11 +56,11 @@ def main() -> None:
     # dataFile = Path('template_1381.xlsx')
 
     data = MailingData(dataFile)
-    template = Template(htmlFile=templateFile, providedFieldNames=data.fieldNames)
+    templateManager = TemplateManager(htmlFile=templateFile, providedFieldNames=data.fieldNames)
 
-    test_fillOut__withReplace(Path('output__withReplace.html'), template, data)
-    test_fillOut__withSegmentationAndDict(Path('output__withSegmentationAndDict.html'), template, data)
-    test_fillOut__withSegmentationAndList(Path('output__withSegmentationAndList.html'), template, data)
+    test_fillOut__withReplace(Path('output__withReplace.html'), templateManager, data)
+    test_fillOut__withSegmentationAndDict(Path('output__withSegmentationAndDict.html'), templateManager, data)
+    test_fillOut__withSegmentationAndList(Path('output__withSegmentationAndList.html'), templateManager, data)
 
 
 if __name__ == "__main__":
