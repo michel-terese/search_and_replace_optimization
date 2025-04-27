@@ -17,7 +17,7 @@ def test_fillOut__withReplace(htmlOutputFile: Path, template: TemplateManager, d
         # Ajoute le contenu formaté au mailing
         mailer.addMailing(formattedContent)
     end = time.perf_counter()
-    print(f"Durée d'exécution de test_fillOut__withReplace : {end - start:.4f} secondes")
+    print(f"Durée d'exécution de test_fillOut__withReplace : {(end - start) * 1000:.4f} ms")
 
 
 def test_fillOut__withSegmentationAndDict(htmlOutputFile: Path, template: TemplateManager, data: MailingData) -> None:
@@ -30,7 +30,7 @@ def test_fillOut__withSegmentationAndDict(htmlOutputFile: Path, template: Templa
         # Ajoute le contenu formaté au mailing
         mailer.addMailing(formattedContent)
     end = time.perf_counter()
-    print(f"Durée d'exécution de test_fillOut__withSegmentationAndDict : {end - start:.4f} secondes")
+    print(f"Durée d'exécution de test_fillOut__withSegmentationAndDict : {(end - start) * 1000:.4f} ms")
 
 
 def test_fillOut__withSegmentationAndList(htmlOutputFile: Path, template: TemplateManager, data: MailingData) -> None:
@@ -43,7 +43,7 @@ def test_fillOut__withSegmentationAndList(htmlOutputFile: Path, template: Templa
         # Ajoute le contenu formaté au mailing
         mailer.addMailing(formattedContent)
     end = time.perf_counter()
-    print(f"Durée d'exécution de fillOut__withSegmentationAndList : {end - start:.4f} secondes")
+    print(f"Durée d'exécution de fillOut__withSegmentationAndList : {(end - start) * 1000:.4f} ms")
 
 
 def main() -> None:
