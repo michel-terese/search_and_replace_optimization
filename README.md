@@ -26,7 +26,7 @@ et le champ 2 <b>L2 val champ 2</b> et à nouveau le champ 1 <b>L2 val champ 1</
 et un texte statique final<hr>
 
 ## Méthodes de recherche et de remplacement
-### 1. "String remplace and dictionary"
+### 1. *"String remplace and dictionary"*
 Il s'agit d'utiliser la fonction `str.replace()` pour rechercher les balises dans le modèle de texte et
 les remplacer par les valeurs correspondantes à partir de chaque ligne du fichier de données xlsx.  
 
@@ -34,7 +34,7 @@ Chaque ligne du fichier xlsx est placée dans un dictionnaire `{nom_champ: valeu
 
 > Cette méthode est implémentée par la méthode `fillOut__withReplace()` de la classe `TemplateManager`.
 
-### 2. "String segmentation and dictionary"
+### 2. *"String segmentation and dictionary"*
 Cette méthode consiste à faire un prétraitement du modèle de texte afin de le découper en segments à l'aide de la méthode `str.split()` sur les balises. 
 Dans l'exemple du modèle simple ci-dessus, le modèle est découpé en 9 segments dont les 5 premiers sont:  
 
@@ -54,7 +54,7 @@ Chaque ligne du fichier xlsx est placée dans un dictionnaire `{nom_champ: valeu
 
 > Cette méthode est implémentée par la méthode `fillOut__withSegmentationAndDict()` de la classe `TemplateManager`.
 
-### 3. "String segmentationand list"
+### 3. *"String segmentationand list"*
 Cette méthode est similaire à la méthode 2. La seule différence est que chaque ligne du fichier xlsx est lue comme une simple liste de valeur,
 au lieu de créer un dictionnaire `{nom_champ: valeur}`. Cela nécessite une étape préparatoire supplémentaire lors de l'initialisation de la classe `TemplateManager`
 pour définir la liste des d'indices des segments de type balise afin de savoir dans quel segment doit être placée chaque valeur de la ligne xlsx.
