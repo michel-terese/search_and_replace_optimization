@@ -1,0 +1,52 @@
+<svg width="900" height="220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 900 220">
+<rect width="900" height="220" x="0" y="0" fill="none"></rect>
+<path d="M175.5 20L175.5 150" fill="none" stroke="#E0E6F1" class="zr254-cls-60"></path>
+<path d="M271.5 20L271.5 150" fill="none" stroke="#E0E6F1" class="zr254-cls-60"></path>
+<path d="M366.5 20L366.5 150" fill="none" stroke="#E0E6F1" class="zr254-cls-60"></path>
+<path d="M462.5 20L462.5 150" fill="none" stroke="#E0E6F1" class="zr254-cls-60"></path>
+<path d="M558.5 20L558.5 150" fill="none" stroke="#E0E6F1" class="zr254-cls-60"></path>
+<path d="M654.5 20L654.5 150" fill="none" stroke="#E0E6F1" class="zr254-cls-60"></path>
+<path d="M750.5 20L750.5 150" fill="none" stroke="#E0E6F1" class="zr254-cls-60"></path>
+<path d="M175.5 20L175.5 150" fill="none" stroke="#6E7079" stroke-linecap="round" class="zr254-cls-60"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(775 150)" fill="#6E7079">ms</text>
+<path d="M175 20.5L170 20.5" fill="none" stroke="#6E7079" class="zr254-cls-60"></path>
+<path d="M175 63.5L170 63.5" fill="none" stroke="#6E7079" class="zr254-cls-60"></path>
+<path d="M175 106.5L170 106.5" fill="none" stroke="#6E7079" class="zr254-cls-60"></path>
+<path d="M175 150.5L170 150.5" fill="none" stroke="#6E7079" class="zr254-cls-60"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(167 41.6667)" fill="#6E7079">String replace and dict</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(167 85)" fill="#6E7079">String segmentation and dict</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(167 128.3333)" fill="#6E7079">String segmentation and list</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(175 158)" fill="#6E7079">0</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(270.8333 158)" fill="#6E7079">30</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(366.6667 158)" fill="#6E7079">60</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(462.5 158)" fill="#6E7079">90</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(558.3333 158)" fill="#6E7079">120</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(654.1667 158)" fill="#6E7079">150</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(750 158)" fill="#6E7079">180</text>
+<path d="M175 29.1667l539.5417 0l0 25l-539.5417 0Z" fill="rgb(84,112,198)" class="zr254-cls-61"></path>
+<path d="M175 72.5l123.625 0l0 25l-123.625 0Z" fill="#91CC75" class="zr254-cls-62"></path>
+<path d="M175 115.8333l113.4028 0l0 25l-113.4028 0Z" fill="#FAC858" class="zr254-cls-63"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;font-weight:bold;" transform="translate(444.7708 41.6667)" fill="#eee" stroke="rgb(84,112,198)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">168.9</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;font-weight:bold;" transform="translate(236.8125 85)" fill="#333">38.7</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;font-weight:bold;" transform="translate(231.7014 128.3333)" fill="#333">35.5</text>
+<style ><![CDATA[
+.zr254-cls-60:hover {
+pointer-events:none;
+}
+.zr254-cls-61:hover {
+cursor:pointer;
+fill:rgba(92,123,217,1);
+}
+.zr254-cls-62:hover {
+cursor:pointer;
+fill:rgba(159,224,128,1);
+}
+.zr254-cls-63:hover {
+cursor:pointer;
+fill:rgba(255,220,96,1);
+}
+
+]]>
+
+</style>
+</svg>

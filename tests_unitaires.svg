@@ -1,0 +1,50 @@
+<svg width="900" height="220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 900 220">
+<rect width="900" height="220" x="0" y="0" fill="none"></rect>
+<path d="M175.5 20L175.5 150" fill="none" stroke="#E0E6F1" class="zr249-cls-56"></path>
+<path d="M290.5 20L290.5 150" fill="none" stroke="#E0E6F1" class="zr249-cls-56"></path>
+<path d="M405.5 20L405.5 150" fill="none" stroke="#E0E6F1" class="zr249-cls-56"></path>
+<path d="M520.5 20L520.5 150" fill="none" stroke="#E0E6F1" class="zr249-cls-56"></path>
+<path d="M635.5 20L635.5 150" fill="none" stroke="#E0E6F1" class="zr249-cls-56"></path>
+<path d="M750.5 20L750.5 150" fill="none" stroke="#E0E6F1" class="zr249-cls-56"></path>
+<path d="M175.5 20L175.5 150" fill="none" stroke="#6E7079" stroke-linecap="round" class="zr249-cls-56"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(775 150)" fill="#6E7079">secondes</text>
+<path d="M175 20.5L170 20.5" fill="none" stroke="#6E7079" class="zr249-cls-56"></path>
+<path d="M175 63.5L170 63.5" fill="none" stroke="#6E7079" class="zr249-cls-56"></path>
+<path d="M175 106.5L170 106.5" fill="none" stroke="#6E7079" class="zr249-cls-56"></path>
+<path d="M175 150.5L170 150.5" fill="none" stroke="#6E7079" class="zr249-cls-56"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(167 41.6667)" fill="#6E7079">String replace and dict</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(167 85)" fill="#6E7079">String segmentation and dict</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(167 128.3333)" fill="#6E7079">String segmentation and list</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(175 158)" fill="#6E7079">0</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(290 158)" fill="#6E7079">1</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(405 158)" fill="#6E7079">2</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(520 158)" fill="#6E7079">3</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(635 158)" fill="#6E7079">4</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(750 158)" fill="#6E7079">5</text>
+<path d="M175 29.1667l462.3 0l0 25l-462.3 0Z" fill="#5470C6" class="zr249-cls-57"></path>
+<path d="M175 72.5l269.1 0l0 25l-269.1 0Z" fill="#91CC75" class="zr249-cls-58"></path>
+<path d="M175 115.8333l227.7 0l0 25l-227.7 0Z" fill="#FAC858" class="zr249-cls-59"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;font-weight:bold;" transform="translate(406.15 41.6667)" fill="#eee" stroke="#5470C6" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">4.02</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;font-weight:bold;" transform="translate(309.55 85)" fill="#333">2.34</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;font-weight:bold;" transform="translate(288.85 128.3333)" fill="#333">1.98</text>
+<style ><![CDATA[
+.zr249-cls-56:hover {
+pointer-events:none;
+}
+.zr249-cls-57:hover {
+cursor:pointer;
+fill:rgba(92,123,217,1);
+}
+.zr249-cls-58:hover {
+cursor:pointer;
+fill:rgba(159,224,128,1);
+}
+.zr249-cls-59:hover {
+cursor:pointer;
+fill:rgba(255,220,96,1);
+}
+
+]]>
+
+</style>
+</svg>
