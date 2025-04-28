@@ -68,12 +68,12 @@ def _main() -> None:
         # xlsxFile = Path('invalid.xlsx')
         # mailingData: MailingData = MailingData(Path(xlsxFile))
 
-        xlsxFile = Path('template_1381.xlsx')
+        xlsxFile = Path('data/simple_data.xlsx')
         mailingData: MailingData = MailingData(Path(xlsxFile))
 
         print("Noms des colonnes :", mailingData.header)
-        # for row in mailingData.fieldsValueAsDict():
-        #     print(row)
+        for row in mailingData.fieldsValueAsDict():
+            print(row)
 
         for row in mailingData.nextFieldsValueAsList():
             print(row)

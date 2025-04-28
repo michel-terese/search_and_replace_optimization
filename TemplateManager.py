@@ -128,7 +128,7 @@ def _test_fillOut__withRegex(executionCount: int) -> None:
         'CHAMP3': 'VALEUR CHAMP3'
     }
 
-    template = TemplateManager(htmlFile=Path('simple_template.html'),
+    template = TemplateManager(htmlFile=Path('data/simple_template.html'),
                                providedFieldNames=list(fieldValues.keys()))
 
     # Remplace les champs dans le contenu HTML par les valeurs fournies
@@ -156,7 +156,7 @@ def _test_fillOut__withReplace(executionCount: int) -> None:
         'CHAMP3': 'VALEUR CHAMP3'
     }
 
-    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+    templateManager = TemplateManager(htmlFile=Path('data/simple_template.html'),
                                       providedFieldNames=list(fieldValues.keys()))
 
     # Remplace les champs dans le contenu HTML par les valeurs fournies
@@ -184,7 +184,7 @@ def _test_fillOut__withSegmentationAndDict(executionCount: int) -> None:
         'CHAMP3': 'VALEUR CHAMP3'
     }
 
-    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+    templateManager = TemplateManager(htmlFile=Path('data/simple_template.html'),
                                       providedFieldNames=list(fieldValues.keys()))
     
     # Remplace les champs dans le contenu HTML par les valeurs fournies
@@ -210,7 +210,7 @@ def _test_fillOut__withSegmentationAndList(executionCount: int) -> None:
     # Exemple de liste de valeurs pour les champs
     fieldValues = ['VALEUR CHAMP1', 'VALEUR CHAMP2', 'VALEUR CHAMP3']
 
-    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+    templateManager = TemplateManager(htmlFile=Path('data/simple_template.html'),
                                       providedFieldNames=fieldNames)
     
     # Remplace les champs dans le contenu HTML par les valeurs fournies

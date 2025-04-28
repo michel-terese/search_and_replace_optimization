@@ -5,13 +5,13 @@ L'objectif de ce projet est de mesurer l'efficacité de 3 méthodes de recherche
 Le modèle de texte est un fichier HTML contenant des balises (champs) à valoriser par des données provenant d'un fichier xlsx.
 Dans le cadre de ce projet de test, le mailing produit par la classe `Mailer`est un simple fichier HTML dans lequel les modèles valorisés sont concaténés.
 
-### Exemple de modèle simple ([simple_template.html](simple_template.html))
+### Exemple de modèle simple ([simple_template.html](data/simple_template.html))
 ```html
 un texte avec le champ 3 <b>[---CHAMP3---]</b> et le champ 1 <b>[---CHAMP1---]</b>
 et le champ 2 <b>[---CHAMP2---]</b> et à nouveau le champ 1 <b>[---CHAMP1---]</b>
 et un texte statique final
 ```
-### Exemple de données ([simple_data.xlsx](simple_data.xlsx))
+### Exemple de données ([simple_data.xlsx](data/simple_data.xlsx))
 | CHAMP1         | CHAMP2         | CHAMP3         |
 | -------------- | -------------- | -------------- |
 | L1 val champ 1 | L1 val champ 2 | L1 val champ 3 |
@@ -69,10 +69,10 @@ Les mesures ont été effectuées sur un MacBook Pro M4 MAX avec Python 3.13.
 #### Temps d'exécution pour 10 000 000 d'exécutions individuelle des méthodes de remplissage des balises
 Pour ces tests, on a utilisé 3 balises contenant chacune une valeur de 13 caractères.
 
-![tests_unitaires.svg](tests_unitaires.svg)
+![tests_unitaires.svg](img/tests_unitaires.svg)
 ### Tests glabaux de génération du mailing
 
 #### Temps d'exécution pour un modèle comportant 10 balises et 11 277 lignes de données
 Dans ces tests, on avait 10 balises entre 0 et 384 caractères, pour un total de 959 caractères par ligne.  
 On voit, que le nombre de balises et la longueur des valeurs a un impact significatif sur le temps d'exécution de la méthode 1.
-![tests_globaux.svg](tests_globaux.svg)
+![tests_globaux.svg](img/tests_globaux.svg)

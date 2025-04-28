@@ -50,8 +50,8 @@ def main() -> None:
     """
     Test de la génération de mailing selon différentes méthodes de remplissage du modèle de mail.
     """
-    dataFile = Path('simple_data.xlsx')
-    templateFile = Path('simple_template.html')
+    dataFile = Path('data/simple_data.xlsx')
+    templateFile = Path('data/simple_template.html')
     # templateFile = Path('template_1381.html')
     # dataFile = Path('template_1381.xlsx')
 

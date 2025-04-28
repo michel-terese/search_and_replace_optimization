@@ -88,7 +88,7 @@ def _main():
     # Exemple de liste de valeurs pour les champs
     fieldValues = ['VALEUR CHAMP1', 'VALEUR CHAMP2', 'VALEUR CHAMP3']
 
-    templateManager = TemplateManager(htmlFile=Path('simple_template.html'),
+    templateManager = TemplateManager(htmlFile=Path('data/simple_template.html'),
                                       providedFieldNames=fieldNames)
 
     # Remplace les champs dans le contenu HTML par les valeurs fournies
