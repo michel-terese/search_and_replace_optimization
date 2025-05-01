@@ -54,7 +54,7 @@ Chaque ligne du fichier xlsx est placée dans un dictionnaire `{nom_champ: valeu
 
 > Cette méthode est implémentée par la méthode `fillOut__withSegmentationAndDict()` de la classe `TemplateManager`.
 
-### 3. *"String segmentationand list"*
+### 3. *"String segmentation and list"*
 Cette méthode est similaire à la méthode 2. La seule différence est que chaque ligne du fichier xlsx est lue comme une simple liste de valeur,
 au lieu de créer un dictionnaire `{nom_champ: valeur}`. Cela nécessite une étape préparatoire supplémentaire lors de l'initialisation de la classe `TemplateManager`
 pour définir la liste des d'indices des segments de type balise afin de savoir dans quel segment doit être placée chaque valeur de la ligne xlsx.
@@ -70,7 +70,7 @@ Les mesures ont été effectuées sur un MacBook Pro M4 MAX avec Python 3.13.
 Pour ces tests, on a utilisé 3 balises contenant chacune une valeur de 13 caractères.
 
 ![tests_unitaires.svg](img/tests_unitaires.svg)
-### Tests glabaux de génération du mailing
+### Tests globaux de génération du mailing
 
 #### Temps d'exécution pour un modèle comportant 10 balises et 11 277 lignes de données
 Dans ces tests, on avait 10 balises entre 0 et 384 caractères, pour un total de 959 caractères par ligne.  
