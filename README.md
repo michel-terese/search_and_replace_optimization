@@ -26,7 +26,7 @@ et le champ 2 <b>L2 val champ 2</b> et à nouveau le champ 1 <b>L2 val champ 1</
 et un texte statique final<hr>
 
 ## Méthodes de recherche et de remplacement
-### 1. *"String remplace and dictionary"*
+### 1. *"String replace and dictionary"*
 Il s'agit d'utiliser la fonction `str.replace()` pour rechercher les balises dans le modèle de texte et
 les remplacer par les valeurs correspondantes à partir de chaque ligne du fichier de données xlsx.  
 
