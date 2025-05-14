@@ -72,7 +72,7 @@ def _main() -> None:
         mailingData: MailingData = MailingData(Path(xlsxFile))
 
         print("Noms des colonnes :", mailingData.header)
-        for row in mailingData.fieldsValueAsDict():
+        for row in mailingData.nextFieldValuesAsDict():
             print(row)
 
         for row in mailingData.nextFieldsValueAsList():
